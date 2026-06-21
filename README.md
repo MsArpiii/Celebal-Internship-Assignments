@@ -30,6 +30,26 @@ This repository contains my weekly assignment submissions completed as part of t
 * Matplotlib
 * Google Colab
 
+## Key Learnings
+
+
+
+Through this assignment, I gained practical experience with NumPy operations, matrix transformations, eigenvalues and eigenvectors, probability distributions, Bayes' theorem, and the Central Limit Theorem. I also learned how data visualization helps interpret mathematical and statistical concepts.
+
+## Assignment Highlights
+
+
+
+- Implemented linear algebra concepts using NumPy
+
+- Visualized statistical distributions using Matplotlib
+
+- Applied Bayes' theorem for spam classification
+
+- Explored Population Stability Index (PSI) for data drift detection
+
+- Demonstrated the Central Limit Theorem through simulation
+
 ## Author
 
 Arpita Das
