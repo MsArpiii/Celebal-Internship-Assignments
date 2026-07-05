@@ -4,9 +4,11 @@ This repository contains my weekly assignment submissions completed as part of t
 
 ## Assignment Progress
 
-| Week   | Topic                                                                   | Status    |
-| ------ | ----------------------------------------------------------------------- | --------- |
+| Week | Topic | Status |
+|------|-------|--------|
 | Week 1 | Python, NumPy, Linear Algebra, Statistics, Probability & ML Foundations | Completed |
+| Week 2 | Tesla Deliveries Forecasting and Time Series Analysis | Completed |
+| Week 3 | Customer Intelligence System using K-Means & DBSCAN Clustering | Completed |
 
 ## Topics Covered in Week 1
 
@@ -122,6 +124,78 @@ The dataset contains information related to Tesla vehicle production, deliveries
 * Scikit-learn
 * Statsmodels
 * Jupyter Notebook
+
+
+# Week 3 – Customer Intelligence System using Clustering
+
+## Overview
+
+This assignment focuses on unsupervised learning techniques to build a Customer Intelligence / Country Segmentation system using socio-economic and health indicators.
+
+The objective is to identify meaningful country groups, compare clustering approaches, and derive actionable insights from the discovered segments.
+
+## Objectives
+
+- Clean and preprocess country-level socio-economic data.
+- Standardize features for clustering.
+- Determine the optimal number of clusters using the Elbow Method.
+- Build and evaluate a K-Means clustering model.
+- Compare results with DBSCAN.
+- Visualize clusters using PCA.
+- Interpret socio-economic patterns across clusters.
+
+### Assignment Highlights
+
+- Performed data cleaning, missing value handling, and duplicate removal.
+- Applied StandardScaler for feature normalization.
+- Used the Elbow Method to determine the optimal number of clusters.
+- Built a K-Means clustering model with three clusters.
+- Evaluated clustering performance using the Silhouette Score.
+- Implemented DBSCAN for comparative clustering analysis.
+- Reduced data dimensions using PCA for visualization.
+- Identified economically developed, developing, and high-risk country groups through cluster interpretation.
+
+## Dataset
+
+**Country Socio-Economic & Health Indicators Dataset**
+
+The dataset contains country-level indicators such as income, health expenditure, child mortality, exports, imports, inflation, life expectancy, and other socio-economic metrics used for clustering and segmentation.
+
+## Tasks Performed
+
+- Dataset inspection and preprocessing
+- Missing value imputation
+- Duplicate record removal
+- Feature scaling using StandardScaler
+- Elbow Method analysis
+- K-Means clustering
+- Silhouette Score evaluation
+- DBSCAN clustering
+- PCA-based visualization
+- Cluster interpretation and socio-economic insights
+
+## Key Learnings
+
+- Understanding the workflow of unsupervised learning.
+- Selecting the optimal number of clusters using the Elbow Method.
+- Evaluating clustering quality with the Silhouette Score.
+- Comparing centroid-based and density-based clustering algorithms.
+- Applying PCA for dimensionality reduction and visualization.
+- Interpreting clusters to derive meaningful socio-economic insights.
+
+## Files Included
+
+- `week3_ArpitaDas.ipynb` – Week 3 assignment notebook
+- `country_data.csv` – Dataset used for clustering and segmentation
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
 
 ## Author
 
