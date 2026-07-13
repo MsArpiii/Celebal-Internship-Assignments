@@ -9,6 +9,7 @@ This repository contains my weekly assignment submissions completed as part of t
 | Week 1 | Python, NumPy, Linear Algebra, Statistics, Probability & ML Foundations | Completed |
 | Week 2 | Tesla Deliveries Forecasting and Time Series Analysis | Completed |
 | Week 3 | Customer Intelligence System using K-Means & DBSCAN Clustering | Completed |
+| Week 4 | Image Classification on CIFAR-10 using ANN & CNN | Completed |
 
 ## Topics Covered in Week 1
 
@@ -196,6 +197,95 @@ The dataset contains country-level indicators such as income, health expenditure
 - Matplotlib
 - Seaborn
 - Scikit-learn
+
+# Week 4 – Image Classification on CIFAR-10 using ANN & CNN
+
+## Overview
+
+This assignment focuses on image classification using the CIFAR-10 dataset by implementing both an Artificial Neural Network (ANN) and a Convolutional Neural Network (CNN). The objective is to compare their performance, analyze training strategies, and evaluate the effectiveness of deep learning architectures for image recognition.
+
+## Objectives
+
+- Load and preprocess the CIFAR-10 dataset.
+- Build an Artificial Neural Network (ANN) for image classification.
+- Build a Convolutional Neural Network (CNN).
+- Train and evaluate both models.
+- Compare ANN and CNN performance.
+- Analyze training and validation accuracy/loss.
+- Evaluate models using classification metrics.
+
+## Assignment Highlights
+
+- Loaded and preprocessed the CIFAR-10 dataset.
+- Normalized image pixel values for faster convergence.
+- Implemented an ANN using fully connected Dense layers.
+- Built a CNN using convolutional and max-pooling layers.
+- Applied Dropout to reduce overfitting.
+- Trained both models using the Adam optimizer.
+- Compared training and validation performance of ANN and CNN.
+- Evaluated models on the test dataset.
+- Generated confusion matrix and classification report.
+- Demonstrated the effectiveness of CNNs for image classification tasks.
+
+## Dataset
+
+**CIFAR-10 Dataset**
+
+The CIFAR-10 dataset consists of 60,000 color images (32×32 pixels) across 10 object categories:
+
+- Airplane
+- Automobile
+- Bird
+- Cat
+- Deer
+- Dog
+- Frog
+- Horse
+- Ship
+- Truck
+
+### Dataset Split
+
+- Training Images: 50,000
+- Testing Images: 10,000
+
+## Tasks Performed
+
+- Dataset loading and exploration
+- Data preprocessing and normalization
+- Label encoding
+- ANN model development
+- CNN model development
+- Model compilation and training
+- Accuracy and loss visualization
+- Performance evaluation
+- Confusion Matrix generation
+- Classification Report generation
+- ANN vs CNN comparison
+
+## Key Learnings
+
+- Understanding image preprocessing techniques for deep learning.
+- Learning the differences between ANN and CNN architectures.
+- Understanding feature extraction through convolutional layers.
+- Applying Dropout to improve model generalization.
+- Evaluating classification models using Accuracy, Precision, Recall, and F1-Score.
+- Comparing deep learning approaches for image recognition problems.
+
+## Files Included
+
+- `week4_ArpitaDas.ipynb` – Week 4 assignment notebook
+- `README.md`
+
+## Technologies Used
+
+- Python
+- TensorFlow
+- Keras
+- NumPy
+- Matplotlib
+- Scikit-learn
+- Google Colab
 
 ## Author
 
