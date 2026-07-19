@@ -10,6 +10,7 @@ This repository contains my weekly assignment submissions completed as part of t
 | Week 2 | Tesla Deliveries Forecasting and Time Series Analysis | Completed |
 | Week 3 | Customer Intelligence System using K-Means & DBSCAN Clustering | Completed |
 | Week 4 | Image Classification on CIFAR-10 using ANN & CNN | Completed |
+| Week 5 | Text Generation using RNN, LSTM & GRU | Completed |
 
 ## Topics Covered in Week 1
 
@@ -285,6 +286,77 @@ The CIFAR-10 dataset consists of 60,000 color images (32×32 pixels) across 10 o
 - NumPy
 - Matplotlib
 - Scikit-learn
+- Google Colab
+
+# Week 5 – Text Generation using RNN, LSTM & GRU
+
+## Overview
+
+This assignment focuses on Natural Language Processing (NLP) using Recurrent Neural Networks (RNNs). The objective is to build and compare Simple RNN, LSTM, and GRU models for next-word prediction and text generation using a custom text corpus.
+
+## Objectives
+
+- Build a text generation pipeline using TensorFlow/Keras.
+- Tokenize and preprocess a custom text corpus.
+- Generate input sequences for next-word prediction.
+- Implement and compare Simple RNN, LSTM, and GRU models.
+- Train each model and compare their learning performance.
+- Visualize training loss across all models.
+- Generate text using trained sequence models.
+
+### Assignment Highlights
+
+- Created a custom text corpus for language modeling.
+- Tokenized text and generated n-gram input sequences.
+- Applied sequence padding and one-hot encoding for model training.
+- Implemented a Simple RNN model for next-word prediction.
+- Built LSTM and GRU models for comparison.
+- Increased embedding dimensions and hidden units for improved learning.
+- Trained all models for 200 epochs.
+- Compared model performance using training loss curves.
+- Generated 10-word text sequences from a given seed text.
+- Evaluated the strengths of RNN, LSTM, and GRU architectures.
+
+## Dataset
+
+**Custom Text Corpus**
+
+A self-created text corpus was used to train the language models for next-word prediction and text generation. The corpus was tokenized and transformed into sequential training samples.
+
+## Tasks Performed
+
+- Text preprocessing and cleaning
+- Tokenization using Keras Tokenizer
+- Sequence generation and padding
+- One-hot encoding of target labels
+- Simple RNN implementation
+- LSTM implementation
+- GRU implementation
+- Model training and evaluation
+- Training loss visualization
+- Text generation using trained models
+
+## Key Learnings
+
+- Understanding sequence modeling for Natural Language Processing.
+- Learning the differences between Simple RNN, LSTM, and GRU architectures.
+- Preparing text data for deep learning models.
+- Implementing next-word prediction using recurrent neural networks.
+- Comparing model learning behavior using training loss.
+- Generating coherent text from trained language models.
+
+## Files Included
+
+- `week5_ArpitaDas.ipynb` – Week 5 assignment notebook
+- `README.md`
+
+## Technologies Used
+
+- Python
+- TensorFlow
+- Keras
+- NumPy
+- Matplotlib
 - Google Colab
 
 ## Author
