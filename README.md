@@ -11,6 +11,7 @@ This repository contains my weekly assignment submissions completed as part of t
 | Week 3 | Customer Intelligence System using K-Means & DBSCAN Clustering | Completed |
 | Week 4 | Image Classification on CIFAR-10 using ANN & CNN | Completed |
 | Week 5 | Text Generation using RNN, LSTM & GRU | Completed |
+| Week 6 | Autoencoder for Image Denoising (MNIST) | Completed |
 
 ## Topics Covered in Week 1
 
@@ -357,6 +358,74 @@ A self-created text corpus was used to train the language models for next-word p
 - Keras
 - NumPy
 - Matplotlib
+- Google Colab
+
+# Week 6 – Autoencoder for Image Denoising (MNIST)
+
+## Overview
+
+This assignment focuses on unsupervised deep learning using autoencoders. The objective is to build and train a Denoising Autoencoder that learns to remove artificial noise from MNIST handwritten digit images while preserving their underlying structure.
+
+## Objectives
+
+- Load and preprocess the MNIST dataset.
+- Introduce artificial noise to create noisy input images.
+- Build a Convolutional Autoencoder (encoder-decoder architecture).
+- Train the model using noisy images as input and clean images as targets.
+- Generate denoised outputs on the test set.
+- Evaluate denoising performance visually and quantitatively.
+
+### Assignment Highlights
+
+- Loaded MNIST digit images from the provided dataset and normalized pixel values.
+- Added Gaussian noise to training and test images to simulate corrupted input.
+- Built a Convolutional Autoencoder using Conv2D, MaxPooling2D (encoder), and Conv2D, UpSampling2D (decoder) layers.
+- Trained the autoencoder using noisy images as input and clean images as reconstruction targets.
+- Used Adam optimizer, binary crossentropy loss, and EarlyStopping to prevent overfitting.
+- Visualized training and validation loss curves across epochs.
+- Generated denoised reconstructions on the test set.
+- Compared original, noisy, and denoised images side by side.
+- Evaluated reconstruction quality using PSNR (Peak Signal-to-Noise Ratio) as an additional metric.
+
+## Dataset
+
+**MNIST Handwritten Digits Dataset**
+
+The dataset consists of 60,000 training images and 10,000 test images of handwritten digits (0–9), each of size 28×28 pixels in grayscale.
+
+## Tasks Performed
+
+- Dataset loading and preprocessing
+- Normalization and reshaping for CNN input
+- Artificial noise generation (Gaussian noise)
+- Convolutional Autoencoder architecture design
+- Model training with EarlyStopping
+- Training/validation loss visualization
+- Denoised image generation on test set
+- Original vs Noisy vs Denoised result comparison
+- PSNR-based quantitative evaluation
+
+## Key Learnings
+
+- Understanding the encoder-decoder structure of autoencoders.
+- Learning how compressed (bottleneck) representations retain key image information.
+- Applying autoencoders specifically for denoising tasks, not just reconstruction.
+- Understanding the role of loss functions (binary crossentropy) in image reconstruction.
+- Using PSNR as a quantitative metric to evaluate image restoration quality.
+- Recognizing tradeoffs in reconstruction sharpness with different loss functions.
+
+## Files Included
+
+- `week6_ArpitaDas.ipynb` – Week 6 assignment notebook
+
+## Technologies Used
+
+- Python
+- TensorFlow
+- Keras
+- NumPy
+- Matplotlib
+- Scikit-image (for PSNR metric)
 - Google Colab
 
 ## Author
