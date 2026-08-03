@@ -12,6 +12,7 @@ This repository contains my weekly assignment submissions completed as part of t
 | Week 4 | Image Classification on CIFAR-10 using ANN & CNN | Completed |
 | Week 5 | Text Generation using RNN, LSTM & GRU | Completed |
 | Week 6 | Autoencoder for Image Denoising (MNIST) | Completed |
+| Week 7 | Document Question Answering System using Retrieval-Augmented Generation (RAG) | Completed |
 
 ## Topics Covered in Week 1
 
@@ -427,6 +428,104 @@ The dataset consists of 60,000 training images and 10,000 test images of handwri
 - Matplotlib
 - Scikit-image (for PSNR metric)
 - Google Colab
+
+Based on your Week 7 notebook, here's a README section that matches the style of your previous weeks.
+
+---
+
+# Week 7 – Document Question Answering System using Retrieval-Augmented Generation (RAG)
+
+## Overview
+
+This assignment focuses on building a **Retrieval-Augmented Generation (RAG)** pipeline for document question answering. The system retrieves the most relevant information from a custom document collection using vector search and hybrid retrieval techniques before generating context-aware answers with a Large Language Model (LLM).
+
+## Objectives
+
+* Build an end-to-end RAG pipeline for document question answering.
+* Load and preprocess text and PDF documents.
+* Split documents into meaningful chunks for retrieval.
+* Generate dense vector embeddings for document chunks.
+* Store embeddings using FAISS for efficient similarity search.
+* Implement hybrid retrieval using vector search and BM25.
+* Improve retrieval quality through cross-encoder re-ranking.
+* Generate grounded answers using an instruction-tuned language model.
+* Evaluate retrieval quality and end-to-end RAG performance.
+
+### Assignment Highlights
+
+* Built a complete Retrieval-Augmented Generation (RAG) pipeline from scratch.
+* Implemented document ingestion supporting TXT files, PDFs, and raw text.
+* Performed document chunking with overlapping windows to preserve context.
+* Generated semantic embeddings using the **all-MiniLM-L6-v2** Sentence Transformer.
+* Stored embeddings in a FAISS vector database for fast similarity search.
+* Combined dense vector retrieval with BM25 keyword search for hybrid retrieval.
+* Applied Cross-Encoder re-ranking to improve retrieval accuracy.
+* Compared different chunk sizes and embedding models for retrieval performance.
+* Used Google's **FLAN-T5** model for context-aware answer generation.
+* Evaluated retrieval accuracy, answer quality, latency, and overall pipeline performance.
+
+## Dataset
+
+**Custom Document Knowledge Base**
+
+The system uses a custom collection of documents that may include:
+
+* Text (.txt) documents
+* PDF documents
+* Raw text inputs
+
+The notebook also creates a small demonstration knowledge base to validate the complete RAG workflow.
+
+## Tasks Performed
+
+* Document ingestion
+* Text preprocessing
+* Document chunking with overlap
+* Sentence embedding generation
+* FAISS vector index creation
+* Semantic similarity search
+* BM25 keyword retrieval
+* Hybrid retrieval implementation
+* Cross-encoder re-ranking
+* Prompt construction
+* Answer generation using FLAN-T5
+* Retrieval evaluation
+* Embedding model comparison
+* Language model comparison
+* End-to-end RAG evaluation
+* Latency measurement
+* System metrics reporting
+
+## Key Learnings
+
+* Understanding the complete Retrieval-Augmented Generation (RAG) architecture.
+* Learning how document chunking impacts retrieval quality.
+* Using sentence embeddings for semantic document search.
+* Implementing efficient vector search with FAISS.
+* Combining semantic and keyword retrieval through hybrid search.
+* Improving retrieval precision using cross-encoder re-ranking.
+* Generating grounded responses with instruction-tuned language models.
+* Evaluating RAG systems using retrieval accuracy, latency, and end-to-end performance.
+
+## Files Included
+
+* `week7_ArpitaDas.ipynb` – Week 7 assignment notebook
+* `README.md`
+
+## Technologies Used
+
+* Python
+* Sentence Transformers
+* FAISS
+* Hugging Face Transformers
+* FLAN-T5
+* BM25
+* Cross-Encoder
+* NumPy
+* Pandas
+* Matplotlib
+* Google Colab
+
 
 ## Author
 
