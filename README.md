@@ -13,6 +13,8 @@ This repository contains my weekly assignment submissions completed as part of t
 | Week 5 | Text Generation using RNN, LSTM & GRU | Completed |
 | Week 6 | Autoencoder for Image Denoising (MNIST) | Completed |
 | Week 7 | Document Question Answering System using Retrieval-Augmented Generation (RAG) | Completed |
+| Week 8 | Single Agent Systems & Agent Pipelines | Completed |
+| Final Project | GPT-2 From Scratch (Mini Decoder-Only Transformer) | Completed |
 
 ## Topics Covered in Week 1
 
@@ -526,6 +528,99 @@ The notebook also creates a small demonstration knowledge base to validate the c
 * Matplotlib
 * Google Colab
 
+# Week 8 – Single Agent Systems & Agent Pipelines
+
+## Overview
+
+This assignment focuses on building a **Single-Agent Smart Assistant** — a task-routing agent that interprets user queries, selects the appropriate tool based on intent, and returns structured JSON output. The assignment also covers the underlying theory of agent pipelines: stateful directed graphs, conditional routing, cycles/retry logic, and trajectory evaluation.
+
+## Objectives
+
+* Understand agent pipelines as stateful directed graphs vs. simple linear pipelines.
+* Implement conditional routing logic to direct queries to the correct tool.
+* Build and integrate multiple tools (calculator, keyword extractor, general-purpose LLM response) into a single agent.
+* Return consistent, structured JSON responses across all tool types.
+* Implement basic error handling so the agent degrades gracefully instead of crashing.
+* Validate the agent through both automated test cases and an interactive query loop.
+
+### Assignment Highlights
+
+* Implemented a **Calculator Tool** for evaluating basic arithmetic expressions.
+* Implemented a **Keyword Extraction Tool** for pulling representative keywords from free text.
+* Implemented a **General Response Tool** using the Anthropic Claude API to answer open-ended queries that don't match a specific tool, with graceful fallback when no API key is provided.
+* Built the core `agent(query)` function using conditional routing: `"calculate"` → Calculator, `"keywords"` → Keyword Extractor, else → General Response.
+* Wrapped all routing logic in try/except blocks to return structured `{"type": "error", "result": ...}` responses on failure instead of crashing.
+* Validated the pipeline against a fixed array of test queries covering all branches (calculation, keyword extraction, general fallback, and edge cases like division by zero and empty input).
+* Tested the agent interactively via a `while True` query loop.
+* Completed a companion quiz covering stateful directed graphs, node/edge design, conditional routing, retry loops, single-agent vs. multi-agent simulation, JSON schema tooling, sequential vs. parallel tool calls, error-handling strategies, and trajectory evaluation vs. final-output evaluation.
+
+## Dataset
+
+Not applicable — this assignment is a code-based agent
+
+# Final Project – GPT-2 From Scratch (Mini Decoder-Only Transformer)
+
+## Overview
+
+This is the final project of the Celebal Technologies Data Science Internship. The objective is to build and train a mini GPT-2-style decoder-only transformer language model entirely from scratch, inspired by Andrej Karpathy's educational approach to implementing GPT architectures, with the parameter count reduced from the full GPT-2 scale for feasible training.
+
+## Objectives
+
+* Implement a decoder-only transformer architecture from scratch (no pre-built transformer libraries for the core model).
+* Build the tokenizer, embedding layers, and multi-head self-attention mechanism.
+* Implement positional encoding, feed-forward layers, and layer normalization.
+* Train the model on a [ text corpus / dataset name ].
+* Reduce the parameter count from the full GPT-2 (127M) configuration to a feasible scale for training.
+* Evaluate the model via training/validation loss and generated text samples.
+* (Bonus) [ multilingual data / custom attention mechanism / scaled toward full 127M config — fill in what you attempted, if anything ]
+
+### Assignment Highlights
+
+* Implemented the transformer architecture manually, including [ multi-head self-attention / masked attention / positional embeddings — list what you built ].
+* Reduced the model to [ X layers, X heads, X embedding dim, ~X parameters ] compared to the original GPT-2 configuration.
+* Trained on [ dataset name / size ] for [ X epochs / X steps ].
+* Achieved a final training loss of [ X ] and validation loss of [ X ].
+* Generated sample text from the trained model to qualitatively assess coherence.
+* [ Add any bonus work attempted: multilingual data, custom attention variants, scaling experiments, etc. ]
+
+## Dataset
+
+**[ Dataset name ]**
+
+[ One or two sentences describing the dataset — source, size, what kind of text it contains. ]
+
+## Tasks Performed
+
+* Tokenizer implementation
+* Embedding and positional encoding implementation
+* Multi-head self-attention implementation
+* Transformer block (attention + feed-forward + layer norm) implementation
+* Model assembly (stacked decoder blocks)
+* Training loop implementation
+* Loss tracking and visualization
+* Text generation from trained model
+* [ Add/remove as applicable ]
+
+## Key Learnings
+
+* Understanding the internal architecture of GPT-style decoder-only transformers.
+* Implementing self-attention and multi-head attention from first principles.
+* Learning how positional encoding allows transformers to process sequence order.
+* Understanding the training dynamics of autoregressive language models.
+* [ Add your own specific learnings/challenges faced ]
+
+## Files Included
+
+* `[ notebook filename ].ipynb` – Final project notebook
+* `README.md`
+
+## Technologies Used
+
+* Python
+* PyTorch [ or TensorFlow — whichever you used ]
+* NumPy
+* Matplotlib
+* Google Colab
 
 ## Author
 
